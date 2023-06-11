@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barra lateral dinamico</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="container">
+    <div class="sidebar">
+      <div class="side-hide">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+
+      <img src="logo.png" width="120" alt="Logo">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Mapa.html">Mapa</a></li>
+        <li><a href="Enemigos.html">Enemigos</a></li>
+        <li><a href="Zonas.html">Zonas</a></li>
+        <li><a href="Herramientas.html">Herramientas</a></li>
+        <li><a href="Fanarts.html">Fanarts</a></li>
+      </ul>
+
+    </div>
+
+    <div class="content">
+      <center><h2>Enemigos</h2></center>
+      <br>
+      <center><img src="enemigos.jpg" width="600" alt="Logo"></center>
+      <br>
+      <p><center>«El mundo es más pequeño de lo que crees».</center></p>
+      <br>
+      <p><center>Cuando eres joven, tiendes a pensar que el mundo es vasto, enorme, gigantesco.</center></p>
+      <p><center> Es normal. Por desgracia, es mucho más pequeño que eso. Ahora que he viajado por todas las tierras, puedo decirlo.</center></p>
+      <p><center>El basto reino de hollownets esta plagado de enemigos y jefes que pondran a prueba tus habilidades como vasija.</center></p>
+      <br>
+      <p><center>"Enclenque insignificante... Te acercas sin temor. ¿Eres un cazador como yo? ¿Sientes la necesidad de acechar, de matar, de entender?
+
+        ¡Si es así, cógelo! Mi diario. Te ayudará. Al principio te será difícil comprenderlo, pero un cazador experimentado logrará entender sus palabras. 
+        Aventúrate en las profundidades de esta tierra y dale muerte a las bestias. Demuestra que eres digno de llevar la marca del cazador."
+        El Diario del Cazador es un compendio de todos los enemigos del Hollow Knight, es otorgado al jugador por El Cazador. 
+        Derrota enemigos para añadir nuevas entradas al diario. Derrota una cantidad específica de cada enemigo para desbloquear notas adicionales del Cazador sobre dicho enemigo.</center></p>
+      <br>
+      <center><img src="cazador.jpg" width="300" alt="Logo"></center>
+      <br>
+      <br>
+      <center><button>Mostrar menu</button></center>
+    </div>
+
+  </section>
+
+<!-- JS Script -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script>
+
+  // Muestra SideBar
+  $('button').on('click', function() {
+    $(".container").toggleClass('show');
+  })
+
+  // Oculta SideBar
+  $('.side-hide').on('click', function() {
+    $(".container").toggleClass('show');
+  });
+</script>
+
+</body>
+</html>

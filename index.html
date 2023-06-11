@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barra lateral dinamico</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="container">
+    <div class="sidebar">
+      <div class="side-hide">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+
+      <img src="logo.png" width="120" alt="Logo">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Mapa.html">Mapa</a></li>
+        <li><a href="Enemigos.html">Enemigos</a></li>
+        <li><a href="Zonas.html">Zonas</a></li>
+        <li><a href="Herramientas.html">Herramientas</a></li>
+        <li><a href="Fanarts.html">Fanarts</a></li>
+      </ul>
+
+    </div>
+
+    <div class="content">
+      <center><h2>Bienvenido al reino de hollownest</h2></center>
+      <br>
+      <center><img src="inicio.jpg" width="350" alt="Logo"></center>
+      <br>
+      <br>
+      <p><center>"Sin mente para pensar".</center></p>
+      <p><center>"Sin voluntad para romper".</center></p>
+      <p><center>"Sin voz para llorar del dolor".</center></p>
+      <p><center>"Nacidos de Dios y vacío".</center></p>
+      <p><center>"Ustedes sellaran la segadora luz que plaga sus sueños".</center></p>
+      <p><center>"Ustedes son la vasija".</center></p>
+      <p><center>"Ustedes son el caballero hueco".</center></p>
+      <br>
+      <p><center>              -Rey blanco</center></p>
+      <br>
+      <br>
+      <center><button>Mostrar menu</button></center>
+    </div>
+
+  </section>
+
+<!-- JS Script -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script>
+
+  // Muestra SideBar
+  $('button').on('click', function() {
+    $(".container").toggleClass('show');
+  })
+
+  // Oculta SideBar
+  $('.side-hide').on('click', function() {
+    $(".container").toggleClass('show');
+  });
+</script>
+
+</body>
+</html>

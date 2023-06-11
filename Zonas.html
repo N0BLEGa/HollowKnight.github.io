@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barra lateral dinamico</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="container">
+    <div class="sidebar">
+      <div class="side-hide">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+
+      <img src="logo.png" width="120" alt="Logo">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Mapa.html">Mapa</a></li>
+        <li><a href="Enemigos.html">Enemigos</a></li>
+        <li><a href="Zonas.html">Zonas</a></li>
+        <li><a href="Herramientas.html">Herramientas</a></li>
+        <li><a href="Fanarts.html">Fanarts</a></li>
+      </ul>
+
+    </div>
+
+    <div class="content">
+      <center><h2>Zonas</h2></center>
+      <br>
+      <center><img src="zonas.jpg" width="500" alt="Logo"></center>
+      <br>
+      <p><center> «No sueñes».</center></p>
+      <br>
+      <p><center>Los sueños son cosas peligrosas. Ideas extrañas, que no son tuyas y que pueden colarse en tu mente..</center></p>
+      <p><center>Pero si te resistes, ¡te invadirá la enfermedad! Mejor no soñar en absoluto.</center></p>
+      <br>
+      <p><center>Hallownest se compone de 17 zonas, todas conectadas entre sí de forma directa (pasadizos) o a través del Tranvía. 
+        Sólo existen ciertas zonas que son accesibles a través de la Estación de ciervos, ubicada en ciertos puntos del reino.</center></p>
+      <br>
+      <center><img src="tranvia.jpg" width="400" alt="Logo"></center>
+      <br>
+      <br>
+      <center><button>Mostrar menu</button></center>
+    </div>
+
+  </section>
+
+<!-- JS Script -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script>
+
+  // Muestra SideBar
+  $('button').on('click', function() {
+    $(".container").toggleClass('show');
+  })
+
+  // Oculta SideBar
+  $('.side-hide').on('click', function() {
+    $(".container").toggleClass('show');
+  });
+</script>
+
+</body>
+</html>
